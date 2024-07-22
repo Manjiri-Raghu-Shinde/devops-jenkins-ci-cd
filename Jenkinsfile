@@ -1,6 +1,6 @@
 pipeline {
 	agent any
-		stages{
+		stages {
 			stage('build'){
 				steps{
 					echo "build"
@@ -11,7 +11,8 @@ pipeline {
 					echo "test"
 				}
 			}
-		} post{
+		} 
+		post {
 			always{
 				echo "i execute always"
 			}
